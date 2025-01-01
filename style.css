@@ -227,7 +227,7 @@ nav .offcanvas ul li a:hover {
 /* ------------------------ home page   -------------------------- */
 .home-sec-1 {
     width: 100%;
-    height: fit-content;
+    height: 100%;
     background-image: url("image/grid\ desktop.png");
     background-position: center;
     background-size: cover;
@@ -267,13 +267,23 @@ nav .offcanvas ul li a:hover {
 
 .home-sec-1 .home-sec-1-container .home-sec-1-container-image {
    margin-top: 100px;
+   position: relative;
 }
 
 .home-sec-1 .home-sec-1-container .home-sec-1-container-image p img {
    width: 250px;
 }
 
+.home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back {
+  width: 140px;
+  position: absolute;
+  
+}
 
+.home-sec-1 .home-sec-1-container .home-sec-1-container-image p .top-img {
+  position: absolute;
+  
+}
 
 
 /* -------- section 2 -------  */
@@ -1277,6 +1287,8 @@ font-size: 20px;
     .home-sec-1{
         background-image: url("image/grid\ mobile.png");
         margin-top: -20%;
+        height: auto;
+        min-height: 100vh;
     }
 
     .home-sec-1 .home-sec-1-container .home-sec-1-container-box .title {
