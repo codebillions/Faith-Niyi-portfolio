@@ -1,0 +1,15 @@
+html{
+    height: 100%;
+}
+
+body {
+    background: white;
+}
+
+
+footer{
+    width: 100%;
+    /* height: fit-content; */
+    background: rgb(4, 0, 20);
+    padding: 40px 100px 40px 100px !important;
+}

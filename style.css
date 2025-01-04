@@ -42,18 +42,25 @@
 }
 
 html{
-    height: 100%;
+    height: 100%; /* Ensure full viewport height */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
 }
 
 body {
     background: white;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+    background: white;
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Stack content vertically */
+
 }
 
 section{
-    padding: 40px 200px 0 200px !important;
+    /* padding: 40px 200px 0px !important; */
+    padding-left: 200px !important;
+    padding-right: 200px !important;
+    padding-bottom: 0 !important;
+    flex-grow: 1;
 }
 
 button {
@@ -153,7 +160,6 @@ nav .offcanvas offcanvas-body .navbar-nav {
 nav .offcanvas h5 {
     margin-left: 20px;
     margin-top: 50px;
-    color: white;
 }
 
 nav .offcanvas h5 img {
@@ -208,7 +214,7 @@ nav .offcanvas ul li a:hover {
     color: rgb(229, 229, 229) !important;
     font-family: 'normal', sans-serif;
     font-weight: normal;
-    font-size: 60px;
+    font-size: 100px;
 
 }
 
@@ -218,13 +224,31 @@ nav .offcanvas ul li a:hover {
     font-weight: bold;
 }
 
+.brand .brand-box h4{
+    font-family: "normal", sans-serif !important;
+    font-size: 30px;
+    margin-top: 50px;
+    color: #727272 !important;
+    font-weight: bolder;
+}
+
+.brand .brand-box h4 span{
+    color: white !important;
+    font-weight: normal !important;
+}
+
 .brand .brand-box .button {
     background: #f27d0c;
     margin-top: 20px;
-    padding: 5px 30px 5px 30px;
+    padding: 10px 60px 10px 60px;
     border-radius: 20px;
     border: none;
     color: white;
+    font-size: 20px;
+}
+
+.connect-text{
+    color: #f27d0c !important;
 }
 
 
@@ -241,7 +265,7 @@ nav .offcanvas ul li a:hover {
 }
 
 .home-sec-1 .home-sec-1-container .home-sec-1-container-box .titles {
-   margin-top: 25% !important;
+   margin-top: 30% !important;
 
 }
 
@@ -273,7 +297,7 @@ nav .offcanvas ul li a:hover {
 }
 
 .home-sec-1 .home-sec-1-container .home-sec-1-container-image {
-   margin: 100px 0 0 -230px;
+   margin: 170px 0 0 -230px;
    position: relative;
 }
 
@@ -285,57 +309,78 @@ nav .offcanvas ul li a:hover {
 .home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back-1 {
  margin: -20px 0 0 80px;
  width: 270px;
+ animation: floatAnimation 3s infinite alternate;
 }
 
 .home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back-2 {
  margin: 280px 0 0 -70px;
  width: 170px;
+ animation: floatAnimation 4s infinite alternate;
+ /* display: none; */
 }
 
 .home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back-3 {
  margin: 32% 0 0 60%;
  width: 120px;
  /* display: none; */
+ animation: floatAnimation 4s infinite alternate;
 }
 
 .home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back-4 {
  margin: 97% 0 0 -35px;
  width: 170px;
- /* display: none; */
+ animation: floatAnimation 4.5s infinite alternate;
 }
 
 .home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back-5 {
  margin: 70% 0 0 70%;
  width: 110px;
+ animation: floatAnimation 6s infinite alternate;
+ /* display: none; */
 }
 
 .home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back-6 {
  margin: 90% 0 0 30%;
  width: 250px;
  /* display: none; */
+ animation: floatAnimation 5s infinite alternate;
 }
 
 .home-sec-1 .home-sec-1-container .home-sec-1-container-image p .top-img {
   position: absolute;
   width: 400px;
+  /* animation: floatAnimation 4s infinite alternate; */
 }
+
+@keyframes floatAnimation {
+    0% {
+        transform: translate(0, 0px);
+    }
+    100% {
+        transform: translate(0px, 20px); /* Adjust values as needed */
+    }
+}
+
+
+
+
 
 
 /* -------- section 2 -------  */
 .home-sec-2 {
     width: 100%;
     height: 100vh;
-    margin-top: 60px;
 }
 
 .home-sec-2 .home-sec-2-container .home-sec-2-container-box-img img {
     border: none;
     border-radius: 30px;
-    /* height: 100%; */
+    margin-top: 27%;
 }
 
 .home-sec-2 .home-sec-2-container .home-sec-2-container-box-text h2 {
     font-size: 50px;
+    margin-top: 27%;
 }
 
 .home-sec-2 .home-sec-2-container .home-sec-2-container-box-text p {
@@ -397,7 +442,7 @@ nav .offcanvas ul li a:hover {
     height: fit-content;
 }
 
-.home-sec-4 .home-sec-4-container .home-sec-4-container-box {
+/* .home-sec-4 .home-sec-4-container .home-sec-4-container-box {
    padding: 0 ;
 }
 
@@ -405,7 +450,8 @@ nav .offcanvas ul li a:hover {
    color: black !important;
    font-family: 'medium', sans-serif;
    font-weight: bold;
-   font-size: 40px;
+   font-size: 60px;
+   margin-top: 70px;
 }
 
 .home-sec-4 .home-sec-4-container .space {
@@ -413,22 +459,138 @@ nav .offcanvas ul li a:hover {
 }
 
 .home-sec-4 .home-sec-4-container .space .home-sec-4-container-img{
-    padding: 5px 5px 55px  5px;
-}
+    margin-right: 50px !important;
+} 
 
 .home-sec-4 .home-sec-4-container .space .home-sec-4-container-img img{
     height: 100px;
     margin-top: 20px;
     filter: invert(1) sepia(1) saturate(0) hue-rotate(275deg);
-    width: 130px;
+    width: auto;
+   
+} */
+
+
+
+.hcarousel{
+    height: fit-content;
+    width: 100%;
+    padding: 0 !important;
+   
 }
+
+.hcarousel h3{
+    font-size: 60px;
+    margin-top: 60px;
+    color: #181818 !important;
+    padding: 0 10% 0 10%;
+}
+
+.hcarousel h3 span{
+    font-family: "normal", sans-serif;
+}
+
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.logos{
+    overflow: hidden;
+    padding: 60px 0;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos::before,
+.logos::after{
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    content: "";
+    /* z-index: 2; */
+}
+
+.logos::before{
+    left: 0;
+    background: white;
+
+}
+
+.logos::after{
+    right: 0;
+    background: white;
+
+}
+
+.logos:hover .logos-slide{
+    animation-play-state: paused;
+}
+.hcarousel .logos .logos-slide{
+    display: inline-block;
+    animation: 25s slide infinite linear;
+    /* width: 100%; */
+}
+.hcarousel .logos .logos-slide img{
+    /* height: 50px; */
+    margin: 0 40px;
+    width: 150px;
+    filter: invert(1) sepia(1) saturate(0) hue-rotate(275deg);
+}
+
+
+
+.directions{
+    height: 20vh;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.directions img{
+margin-top: 50px;
+}
+.directions h4{
+font-size: 30px;
+font-weight: 400;
+}
+
+.directions2{
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.directions2 a h4{
+    font-size: 30px;
+    font-weight: 400;
+    cursor: pointer;
+    text-transform: capitalize;
+    }
+
+
+
+
+
+
 
 
 /*---- section 5 -----*/
 
 .home-sec-5{
     width: 100%;
-    height: 100vh;
+    height: 80vh;
 }
 
 .cd__main{
@@ -442,9 +604,9 @@ nav .offcanvas ul li a:hover {
   height: 100%;
 }
 .card {
-  background-color: #f9fafe;
-  width: 550px;
-  height: 45%;
+  background-color: white;
+  width: 100% !important;
+  height: fit-content;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -457,6 +619,10 @@ nav .offcanvas ul li a:hover {
   box-shadow: none;
 }
 
+.card h1{
+    margin-top: 0;
+}
+
 .quote-icon {
   position: absolute;
   z-index: 0;
@@ -465,7 +631,7 @@ nav .offcanvas ul li a:hover {
   top: 0;
 }
 
-.avatar {
+/* .avatar {
   width: 120px;
   height: 120px;
   border-radius: 150px;
@@ -477,10 +643,10 @@ nav .offcanvas ul li a:hover {
   left: 50%;
   transform: translate(-60px, -60px);
   z-index: 1;
-}
+} */
 
 .header {
-  margin: 50px 0 0 0;
+  margin: 0 0 0 0;
   text-align: center;
   z-index: 1;
 }
@@ -564,14 +730,15 @@ nav .offcanvas ul li a:hover {
 
 
 
+
+
 /*---------------------- footer section ----------------------------  */
 
 footer{
     width: 100%;
-    height: fit-content;
+    /* height: fit-content; */
     background: rgb(4, 0, 20);
-    padding: 40px 100px 0 100px !important;
-    margin-top: auto;
+    padding: 40px 100px 40px 100px !important;
 }
 
 .footer-sec .footer-sec-container .footer-sec-container-box h3{
@@ -651,32 +818,27 @@ footer{
     background-image: url("image/grid\ desktop.png");
     background-size: cover;
     background-position: center;
-    margin-top: -7%;
+    margin-top: -6%;
 }
 
 .about-sec-1 .about-sec-1-container .about-sec-1-container-header h1{
- margin-top: 100px;
- font-size: 83px;
+ margin-top: 170px;
+ font-size: 100px;
 }
 
 
 .about-sec-1 .about-sec-1-container .about-sec-1-container-img .img-bg{
 
-    background: rgb(24, 24, 24);
-    height: 87%;
-    width: 50%;
+    height:fit-content;
+    width: 100%;
     padding: 0 !important;
-    border: none;
-    border-radius: 25px 25px 25px 25px;
-    margin-left: 25%;
-    margin-top: 20px;
 }
 
 
 .about-sec-1 .about-sec-1-container .about-sec-1-container-img .img-bg img{
-    margin-left: 13%;
     border-radius:0 0 25% 0;
     border: none;
+    width: 80%;
 }
 
 
@@ -685,12 +847,13 @@ footer{
 }
 
 .about-sec-1 .about-sec-1-container .about-sec-1-container-text p span{
-    color: black !important;
+    color: black !important; 
     font-weight: bold;
 }
 
 .about-sec-1 .about-sec-1-container .about-sec-1-container-text p{
     color: black !important;
+    font-size: 23px;
 }
 
 
@@ -722,7 +885,7 @@ footer{
     color: white !important;
     font-size: 20px;
     font-family: 'normal', sans-serif !important;
-    margin: 50px 0 0 30px;
+    margin: 75px 0 0 30px;
 
 }
 
@@ -747,7 +910,7 @@ footer{
     color: white !important;
     font-size: 20px;
     font-family: 'normal', sans-serif !important;
-    margin: 50px 0 0 30px;
+    margin: 75px 0 0 30px;
 
 }
 
@@ -772,7 +935,7 @@ footer{
     color: white !important;
     font-size: 20px;
     font-family: 'normal', sans-serif !important;
-    margin: 50px 0 0 30px;
+    margin: 75px 0 0 30px;
 
 }
 
@@ -818,9 +981,10 @@ footer{
 .about-sec-3  .about-sec-3-container .about-sec-3-container-btn p a{
    background: #f27d0c;
    margin-top: 50px;
-   padding: 10px 50px 10px 50px;
+   padding: 20px 70px 20px 70px;
    border-radius: 50px;
    color: white;
+   font-size: 18px;
 }
 
 
@@ -829,11 +993,16 @@ footer{
 
 .contact-sec-1{
     width: 100%;
-    height: fit-content;
+    height: 50vh;
+    background-image: url("image/grid\ desktop.png");
+    background-size: cover;
+    background-position: center;
+    margin-top: -5%;
 }
 
 .contact-sec-1 .contact-sec-1-container .contact-sec-1-container-box h1{
     font-size: 80px ;
+    margin-top: 220px;
 }
 
 .contact-sec-1 .contact-sec-1-container .contact-sec-1-container-box h4{
@@ -841,14 +1010,20 @@ footer{
    color: black !important;
 }
 
+
+
 /* ----------------------- form  section---------------------------- */
 .contact-sec-2{
     width: 100%;
     height: fit-content;
+    /* display: none; */
 }
 
 .contact-sec-2 form{
-padding: 40px 100px 50px 100px !important;
+    padding-left: 200px !important;
+    padding-right: 200px !important;
+    padding-bottom: 60px !important;
+    font-family: "normal", sans-serif;
 }
 
 
@@ -876,14 +1051,14 @@ padding: 40px 100px 50px 100px !important;
     border: none;
     border-bottom: 2px solid black;
     border-radius: 0 !important;
-   outline: none;
+    outline: none;
 }
 
 
 .contact-sec-2 form select option{
     background-color: rgb(4, 0, 20);
     color: white;
- 
+    font-size: 20PX;
 }
 
 
@@ -895,10 +1070,11 @@ padding: 40px 100px 50px 100px !important;
 
 .contact-sec-2 form button{
     background: #f27d0c;
-    padding: 10px 60px 10px 60px;
+    padding: 15px 70px 15px 70px;
     margin-top: 20px;
     color: white;
     border-radius: 50px;
+    font-size: 20px;
 }
 
 
@@ -910,10 +1086,13 @@ padding: 40px 100px 50px 100px !important;
 
 
 /* For Tablet View */
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1020px) {
     
     section{
-    padding: 40px 50px 0 50px !important;
+    /* padding: 40px 50px 0 50px !important; */
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    padding-bottom: 0 !important;
     }
 
     nav{
@@ -943,14 +1122,20 @@ padding: 40px 100px 50px 100px !important;
     }
 
     .brand .brand-box h3 {
-        font-size: 35px;
+        font-size: 45px;
 
+    }
+
+    
+    .brand .brand-box h4{
+        font-size: 20px;
     }
 
     .brand .brand-box .button {
         margin-top: 15px;
-        padding: 5px 30px 5px 30px;
+        padding: 10px 50px 10px 50px;
         border-radius: 20px;
+        font-size: 18px;
     }
 
 
@@ -960,6 +1145,10 @@ padding: 40px 100px 50px 100px !important;
      .home-sec-1{
         margin-top: -13%;
         height: auto;
+    }
+
+    .home-sec-1 .home-sec-1-container .home-sec-1-container-box .titles {
+       margin-top: 35% !important;
     }
 
     .home-sec-1 .home-sec-1-container .home-sec-1-container-box h1 {
@@ -980,7 +1169,7 @@ padding: 40px 100px 50px 100px !important;
 
 
     .home-sec-1 .home-sec-1-container .home-sec-1-container-image {
-        margin: 60px 0 0 -130px;
+        margin: 100px 0 0 -130px;
         position: relative;
      }
      
@@ -1053,6 +1242,7 @@ padding: 40px 100px 50px 100px !important;
 
     .home-sec-3 h2 {
         font-size: 35px;
+        margin-top: 40px;
     }
 
     .home-sec-3 .home-sec-3-container .home-sec-3-container-box img {
@@ -1069,7 +1259,7 @@ padding: 40px 100px 50px 100px !important;
 
 
     /* -------------- section 4 --------------- */
-
+/* 
 .home-sec-4 .home-sec-4-container .home-sec-4-container-box {
    padding: 0 50px 0 50px;
 }
@@ -1093,7 +1283,31 @@ padding: 40px 100px 50px 100px !important;
     width: 100px;
     margin-top: 15px;
     
+} */
+
+
+.hcarousel h3{
+    font-size: 30px;
+    margin-top: 70px;
 }
+
+/* .hcarousel h3 span{
+    font-size: 18px;
+} */
+
+
+.hcarousel .logos .logos-slide img{
+    margin: 0 25px;
+    width: 100px;
+    filter: invert(1) sepia(1) saturate(0) hue-rotate(275deg);
+}
+
+
+
+
+
+
+
     
 
 /*---- section 5 -----*/
@@ -1105,12 +1319,12 @@ padding: 40px 100px 50px 100px !important;
   border-radius: 5px;
 }
 
-.quote-icon {
+/* .quote-icon {
   width: 35px;
   margin-top: 10px;
-}
+} */
 
-
+/* 
 .avatar {
   width: 90px;
   height: 90px;
@@ -1118,10 +1332,10 @@ padding: 40px 100px 50px 100px !important;
   border: 3px solid #f9fafe;
   left: 57%;
   margin-top: 10%;
-}
+} */
 
 .header {
-  margin: 10px 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .name {
@@ -1172,30 +1386,26 @@ padding: 40px 100px 50px 100px !important;
 }
 
 .about-sec-1 .about-sec-1-container .about-sec-1-container-header h1{
-margin-top: 120px;
- font-size: 40px;
-
-}
-
-
-.about-sec-1 .about-sec-1-container .about-sec-1-container-img .img-bg{
-
-    height: 87%;
-    width: auto;
-    border-radius: 25px 25px 25px 25px;
-    margin-left: 0;
-}
-
-
-.about-sec-1 .about-sec-1-container .about-sec-1-container-img .img-bg img{
-    margin-left: 5%;
-    border-radius:0 0 0 0;
-    border: none;
-}
+    margin-top: 120px;
+    font-size: 60px;
+   
+   }
+   
+   .about-sec-1 .about-sec-1-container-text p{
+       padding: 0 20px 0 20px;
+   }
+   
+   .about-sec-1 .about-sec-1-container .about-sec-1-container-img .img-bg img{
+       width: 95%;
+   }
 
 
 .about-sec-1 .about-sec-1-container .about-sec-1-container-text{
     padding: 20px 30px 20px 30px;
+}
+
+.about-sec-1 .about-sec-1-container .about-sec-1-container-text p{
+   font-size: 18px;
 }
 
 
@@ -1279,28 +1489,508 @@ margin-top: 120px;
 /* ----------------  section 3 ----------------------x */
 
 .about-sec-3  .about-sec-3-container .about-sec-3-container-box h1{
-    font-size: 45px;
-    margin-top: 25px;
+    font-size: 35px;
+    margin-top: 30px;
 }
 
 
 .about-sec-3  .about-sec-3-container .about-sec-3-container-btn p a{
    margin-top: 30px;
+   padding: 10px 50px 10px 50px;
+   font-size: 14px;
 }
 
 
 
 /* -------------------------------------------------------------- contact page --------------------------------------------------- */
-
+.contact-sec-1{
+    margin-top: -15%;
+    height: auto;
+}
 .contact-sec-1 .contact-sec-1-container .contact-sec-1-container-box h1{
-    font-size: 50px ;
+    font-size: 35px ;
+    margin-top: 170px;
 }
 
 .contact-sec-1 .contact-sec-1-container .contact-sec-1-container-box h4{
-font-size: 20px;
+font-size: 18px;
 }
 
 
+.contact-sec-2 form{
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+    padding-bottom: 60px !important;
+}
+
+.contact-sec-2 form button{
+    padding: 10px 30px 10px 30px;
+    font-size: 16px;
+}
+
+.contact-sec-2 form select option{
+    font-size: 14px;
+}
+
+}
+
+
+/* iPad pro size */
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1024px){
+
+
+    section{
+        /* padding: 40px 50px 0 50px !important; */
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+        padding-bottom: 0 !important;
+        }
+    
+        nav{
+            padding: 20px 20px 0 20px !important;
+        }
+    
+        nav .offcanvas {
+            padding: 0 20PX 0 20px;
+        }
+    
+        nav .offcanvas ul li a {
+            font-size: 20px;
+        }
+    
+        .connect .connect-box h3 {
+            font-size: 14px !important;
+        }
+    
+        .connect .connect-box a {
+            font-size: 10px !important;
+            text-decoration: none;
+            margin-right: 18px;
+        }
+    
+        .brand {
+            margin: 70px 0 0 8px;
+        }
+    
+        .brand .brand-box h3 {
+            font-size: 45px;
+    
+        }
+    
+        
+        .brand .brand-box h4{
+            font-size: 20px;
+        }
+    
+        .brand .brand-box .button {
+            margin-top: 15px;
+            padding: 10px 50px 10px 50px;
+            border-radius: 20px;
+            font-size: 18px;
+        }
+    
+    
+    
+        /* ------------------------ home page   -------------------------- */
+    
+         .home-sec-1{
+            margin-top: -13%;
+            height: auto;
+        }
+    
+        .home-sec-1 .home-sec-1-container .home-sec-1-container-box .titles {
+           margin-top: 35% !important;
+        }
+    
+        .home-sec-1 .home-sec-1-container .home-sec-1-container-box h1 {
+            font-size: 50px;
+        }
+    
+    
+        .home-sec-1 .home-sec-1-container .home-sec-1-container-box p {
+            font-size: 25px;
+        }
+    
+        .home-sec-1 .home-sec-1-container .home-sec-1-container-box a {
+            margin-top: 0 !important;
+            padding: 10px 40px 10px 40px !important;
+            font-size: 14px;
+            border-radius: 15px;
+        }
+    
+    
+        .home-sec-1 .home-sec-1-container .home-sec-1-container-image {
+            margin: 170px 0 0 -130px;
+            position: relative;
+         }
+         
+         .home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back {
+           width: 140px;
+           position: absolute;
+         }
+         
+         .home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back-1 {
+          margin: -27px 0 0 35px;
+          width: 125px;
+        
+         }
+         
+         .home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back-2 {
+          margin:85px 0 0 -40px;
+          width: 100px;
+          /* display: none; */
+         }
+         
+         .home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back-3 {
+          margin: 40px 0 0 45%;
+          width: 75px;
+          /* display: none; */
+         }
+         
+         .home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back-4 {
+          margin: 65% 0 0 -30px;
+          width: 100px;
+          /* display: none; */
+         }
+         
+         .home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back-5 {
+          margin:35% 0 0 50%;
+          width: 110px;
+          /* display: none; */
+         }
+         
+         .home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back-6 {
+          margin: 55% 0 0 20%;
+          width: 130px;
+         }
+         
+         .home-sec-1 .home-sec-1-container .home-sec-1-container-image p .top-img {
+           position: absolute;
+           width: 180px;
+         }
+    
+    
+        /* -------- section 2 -------  */
+        .home-sec-2{
+            height: auto;
+        }
+    
+        .home-sec-2 .home-sec-2-container .home-sec-2-container-box-img img {
+            border: none;
+            border-radius: 20px;
+        }
+    
+        .home-sec-2 .home-sec-2-container .home-sec-2-container-box-text h2 {
+            font-size: 25px;
+        }
+    
+        .home-sec-2 .home-sec-2-container .home-sec-2-container-box-text p {
+            font-size: 19px;
+            margin-top: 23px;
+        }
+    
+    
+    
+        /* ---------- seection 3 ----------- */
+    
+        .home-sec-3 h2 {
+            font-size: 35px;
+            margin-top: 40px;
+        }
+    
+        .home-sec-3 .home-sec-3-container .home-sec-3-container-box img {
+            border-radius: 15px;
+        }
+    
+        .home-sec-3 .home-sec-3-container .home-sec-3-container-box a h3 {
+            font-size: 20px;
+        }
+    
+        .home-sec-3 .home-sec-3-container .home-sec-3-container-box p {
+            font-size: 18px;
+        }
+    
+    
+        /* -------------- section 4 --------------- */
+    /* 
+    .home-sec-4 .home-sec-4-container .home-sec-4-container-box {
+       padding: 0 50px 0 50px;
+    }
+    
+    .home-sec-4 .home-sec-4-container .home-sec-4-container-box h3 {
+       font-size: 35px;
+    }
+    
+    .home-sec-4 .home-sec-4-container .space {
+        margin-top: 50px;
+    }
+    
+    .home-sec-4 .home-sec-4-container .space .home-sec-4-container-img{
+        padding: 0;
+        margin-left: 50px !important;
+        width: 80px;
+    }
+    
+    .home-sec-4 .home-sec-4-container .space .home-sec-4-container-img img{
+        height: auto;
+        width: 100px;
+        margin-top: 15px;
+        
+    } */
+    
+    
+    .hcarousel h3{
+        font-size: 30px;
+        margin-top: 70px;
+    }
+    
+    /* .hcarousel h3 span{
+        font-size: 18px;
+    } */
+    
+    
+    .hcarousel .logos .logos-slide img{
+        margin: 0 25px;
+        width: 100px;
+        filter: invert(1) sepia(1) saturate(0) hue-rotate(275deg);
+    }
+    
+    
+    
+    
+    
+    
+    
+        
+    
+    /*---- section 5 -----*/
+    .home-sec-5{
+        height: 65vh;
+    }
+    .card {
+      background-color: #f9fafe;
+      width: 1000px;
+      height: 25vh;
+      border-radius: 5px;
+    }
+    
+    /* .quote-icon {
+      width: 35px;
+      margin-top: 10px;
+    } */
+    
+    /* 
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 150px;
+      border: 3px solid #f9fafe;
+      left: 57%;
+      margin-top: 10%;
+    } */
+    
+    .header {
+      margin: 0 0 0 0;
+    }
+    
+    .name {
+      font-size: 15px;
+      margin: 0;
+    }
+    
+    .title {
+      font-size: 20px;
+      margin: 10px 0 0 0;
+      padding: 3px;
+    }
+    
+    .quote-container {
+      margin: 0;
+      height: fit-content;
+      padding: 5px 10px 0 10px;
+    }
+    
+    .quote {
+      height: fit-content;
+      font-size: 12px !important;
+      text-align: center;
+      margin: 0;
+    }
+    
+    
+    .swiper-pagination{
+        margin-bottom: 10% !important;
+    }
+    
+    
+    /*---------------------- footer section ----------------------------  */
+    
+    .footer-sec .footer-sec-container .footer-sec-container-box h3{
+        font-size: 20px;
+    }
+    
+    
+    .footer-sec .footer-sec-container .footer-sec-container-box .mail h1{
+        font-size:43px;
+    }
+    
+    
+    /* ------------------------------------------------------------------- about page -------------------------------------------------------------------- */
+    .about-sec-1{
+        margin-top: -15%;
+    }
+    
+    .about-sec-1 .about-sec-1-container .about-sec-1-container-header h1{
+        margin-top: 120px;
+        font-size: 60px;
+       
+       }
+       
+       .about-sec-1 .about-sec-1-container-text p{
+           padding: 0 20px 0 20px;
+       }
+       
+       .about-sec-1 .about-sec-1-container .about-sec-1-container-img .img-bg img{
+           width: 95%;
+       }
+    
+    
+    .about-sec-1 .about-sec-1-container .about-sec-1-container-text{
+        padding: 20px 50px 20px 50px;
+    }
+    
+    .about-sec-1 .about-sec-1-container .about-sec-1-container-text p{
+       font-size: 18px;
+    }
+    
+    
+    
+    /*------------------------------- section 2 -------------------------- */
+    
+    
+    /* box 1 */
+    .about-sec-2 .about-sec-2-container .about-sec-2-container-box1{
+        padding: 10px 30px 10px 30px;
+        width: 46%;
+        margin: 0 15px 0 15px ;
+    }
+    
+    .about-sec-2 .about-sec-2-container .about-sec-2-container-box1 h1{
+        font-size: 60px;
+    }
+    
+    .about-sec-2 .about-sec-2-container .about-sec-2-container-box1 h4{
+        font-size: 18px;
+        margin: 20px 0 0 30px;
+    }
+    
+    
+    
+    /* box2 */
+    .about-sec-2 .about-sec-2-container .about-sec-2-container-box2{
+       padding: 10px 30px 10px 30px;
+        width: 46%;
+        margin: 0 15px 0 0 ;
+    }
+    
+    .about-sec-2 .about-sec-2-container .about-sec-2-container-box2 h1{
+       font-size: 60px;
+    }
+    
+    .about-sec-2 .about-sec-2-container .about-sec-2-container-box2 h4{
+        font-size: 18px;
+        margin: 20px 0 0 30px;
+    }
+    
+    
+    
+    /* box3 */
+    .about-sec-2 .about-sec-2-container .about-sec-2-container-box3{
+        padding: 10px 30px 10px 30px;
+        width: 53%;
+        margin: 15px 15px 0 15px;
+    }
+    
+    .about-sec-2 .about-sec-2-container .about-sec-2-container-box3 h1{
+        font-size: 60px;
+    }
+    
+    .about-sec-2 .about-sec-2-container .about-sec-2-container-box3 h4{
+       font-size: 18px;
+        margin: 15px 0 0 30px;
+    
+    }
+    
+    
+    /* box4 */
+    .about-sec-2 .about-sec-2-container .about-sec-2-container-box4{
+        padding: 10px 20px 10px 15px;
+        width: 39%;
+        margin: 15px 0 0 0;
+    }
+    
+    .about-sec-2 .about-sec-2-container .about-sec-2-container-box4 h1{
+        font-size: 60px;
+    }
+    
+    .about-sec-2 .about-sec-2-container .about-sec-2-container-box4 h4{
+        font-size:16px;
+        margin: 15px 0 0 30px;
+    
+    }
+    
+    
+    
+    /* ----------------  section 3 ----------------------x */
+    
+    .about-sec-3  .about-sec-3-container .about-sec-3-container-box h1{
+        font-size: 35px;
+        margin-top: 30px;
+    }
+    
+    
+    .about-sec-3  .about-sec-3-container .about-sec-3-container-btn p a{
+       margin-top: 30px;
+       padding: 10px 50px 10px 50px;
+       font-size: 14px;
+    }
+    
+    
+    
+    /* -------------------------------------------------------------- contact page --------------------------------------------------- */
+    .contact-sec-1{
+        margin-top: -15%;
+        height: auto;
+    }
+    .contact-sec-1 .contact-sec-1-container .contact-sec-1-container-box h1{
+        font-size: 40px ;
+        margin-top: 250px;
+    }
+    
+    .contact-sec-1 .contact-sec-1-container .contact-sec-1-container-box h4{
+    font-size: 25px;
+    }
+    
+    
+    .contact-sec-2 form{
+        padding-left: 100px !important;
+        padding-right: 100px !important;
+        padding-bottom: 60px !important;
+        font-size: 20px;
+    }
+    
+    .contact-sec-2 form button{
+        padding: 10px 30px 10px 30px;
+        font-size: 16px;
+    }
+    
+    .contact-sec-2 form select option{
+    font-size: 13px !important;
+        width: 100px !important;
+        overflow: hidden !important;
+    }
+    
 
 
 }
@@ -1315,7 +2005,10 @@ font-size: 20px;
 @media only screen and (min-width: 500px) and (max-width: 767px) and (orientation: portrait) {
 
     section{
-    padding: 40px 50px 0 50px !important;
+    /* padding: 40px 50px 0 50px !important; */
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    padding-bottom: 0 !important;
     }
     nav{
          padding: 20px 20px 0 20px !important;
@@ -1341,6 +2034,11 @@ font-size: 20px;
         font-size: 13px !important;
     }
 
+    .brand .brand-box h4{
+        font-size: 20px;
+    }
+
+
     .connect .connect-box a {
         font-size: 10px !important;
         margin-right: 12px;
@@ -1353,14 +2051,15 @@ font-size: 20px;
     }
 
     .brand .brand-box h3 {
-        font-size: 35px;
+        font-size: 43px;
 
     }
 
     .brand .brand-box .button {
         margin-top: 15px;
-        padding: 5px 30px 5px 30px;
+        padding: 10px 50px 10px 50px;
         border-radius: 20px;
+        font-size: 15px; 
     }
 
 
@@ -1373,7 +2072,7 @@ font-size: 20px;
     }
 
     .home-sec-1 .home-sec-1-container .home-sec-1-container-box .titles {
-       margin-top: 100px;
+       margin-top: 150px !important;
     }
 
     .home-sec-1 .home-sec-1-container .home-sec-1-container-box h1 {
@@ -1446,7 +2145,7 @@ font-size: 20px;
 
     .home-sec-2 .home-sec-2-container .home-sec-2-container-box-img img {
         border-radius: 20px;
-        margin-top: 3%;
+        margin-top: 40%;
     }
 
     .home-sec-2 .home-sec-2-container .home-sec-2-container-box-text {
@@ -1454,7 +2153,8 @@ font-size: 20px;
     }
 
     .home-sec-2 .home-sec-2-container .home-sec-2-container-box-text h2 {
-        font-size: 35px;
+        font-size: 30px;
+        margin-top: 0;
     }
 
     .home-sec-2 .home-sec-2-container .home-sec-2-container-box-text p {
@@ -1487,19 +2187,20 @@ font-size: 20px;
 
     /* -------------- section 4 --------------- */
 
-.home-sec-4 .home-sec-4-container .home-sec-4-container-box {
+/* .home-sec-4 .home-sec-4-container .home-sec-4-container-box {
    padding:  0 20px 0 20px;
 }
 
 .home-sec-4 .home-sec-4-container .home-sec-4-container-box h3 {
-   font-size: 22px;
+   font-size: 25px;
+   margin-top: 30px;
 }
 
 .home-sec-4 .home-sec-4-container .space .home-sec-4-container-img{
     padding: 0;
     margin-left: 25px !important;
     width: 70px;
-    /* background: red; */
+    
 }
 
 
@@ -1509,17 +2210,51 @@ font-size: 20px;
     width: 100px; 
     margin-top: 20px;
     
+} */
+
+
+.hcarousel h3{
+    font-size: 27px;
+    margin-top: 70px;
+}
+
+/* .hcarousel h3 span{
+    font-size: 18px;
+} */
+
+.hcarousel .logos .logos-slide img{
+    margin: 0 25px;
+    width: 100px;
 }
 
 
 
+
+
 /*---- section 5 -----*/
+/* 
+.swiper-slide{
+    width: 50% !important;
+} */
+
+.home-sec-5{
+    width: 100%;
+    height: 70vh;
+}
 
 .card {
-  background-color: #f9fafe;
-  width: 1000px;
-  height: 35%;
   border-radius: 5px;
+  margin: 0;
+}
+
+.card h2{
+    font-size: 8px;
+}
+
+
+.card p{
+    margin-bottom: 15px;
+    font-size: 8px;
 }
 
 .quote-icon {
@@ -1538,7 +2273,7 @@ font-size: 20px;
 }
 
 .header {
-  margin: 10px 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .name {
@@ -1632,8 +2367,8 @@ margin-top: -20%;
 }
 
 .about-sec-1 .about-sec-1-container .about-sec-1-container-header h1{
-margin-top: 85px;
- font-size: 30px;
+ margin-top: 120px;
+ font-size: 35px;
 
 }
 
@@ -1641,29 +2376,17 @@ margin-top: 85px;
     padding: 0 20px 0 20px;
 }
 
-
-.about-sec-1 .about-sec-1-container .about-sec-1-container-img .img-bg{
-
-    height: 85%;
-    width: auto;
-    border-radius: 15px 15px 15px 15px;
-    margin-left: 0;
-    margin-top: 20px;
-}
-
-
 .about-sec-1 .about-sec-1-container .about-sec-1-container-img .img-bg img{
-    margin-left: 5%;
-    border-radius:0 0 0 0;
+    width: 100%;
 }
 
 
 .about-sec-1 .about-sec-1-container .about-sec-1-container-text{
-    padding: 20px 0 0 0;
+    padding: 0 0 0 0;
 }
 
 .about-sec-1 .about-sec-1-container .about-sec-1-container-text p{
-    font-size: 13px;
+    font-size: 14px;
 }
 
 
@@ -1747,13 +2470,15 @@ margin-top: 85px;
 /* ----------------  section 3 ----------------------x */
 
 .about-sec-3  .about-sec-3-container .about-sec-3-container-box h1{
-    font-size: 35px;
-    margin-top: 25px;
+    font-size: 40px;
+    margin-top: 35px;
 }
 
 
 .about-sec-3  .about-sec-3-container .about-sec-3-container-btn p a{
    margin-top: 30px;
+   padding: 10px 50px 10px 50px;
+   font-size: 14px;
 }
 
 
@@ -1765,6 +2490,7 @@ margin-top: 85px;
 
 .contact-sec-1 .contact-sec-1-container .contact-sec-1-container-box h1{
     font-size: 35px ;
+    margin-top: 50px;
 }
 
 .contact-sec-1 .contact-sec-1-container .contact-sec-1-container-box h4{
@@ -1772,6 +2498,20 @@ font-size: 14px;
 }
 
 
+.contact-sec-2 form{
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    padding-bottom: 60px !important;
+}
+
+.contact-sec-2 form button{
+    padding: 10px 30px 10px 30px;
+    font-size: 16px;
+}
+
+.contact-sec-2 form select option{
+    font-size: 14px;
+}
 
 }
 
@@ -1788,7 +2528,10 @@ font-size: 14px;
 
     /* navbar */
     section{
-    padding: 40px 25px 0 25px !important;
+    /* padding: 40px 25px 0 25px !important; */
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    padding-bottom: 0 !important;
     }
   
     nav{
@@ -1817,6 +2560,11 @@ font-size: 14px;
         font-size: 12px !important;
     }
 
+    
+    .brand .brand-box h4{
+        font-size: 18px;
+    }
+
     .connect .connect-box a {
         font-size: 8px !important;
         margin-right: 11px;
@@ -1828,14 +2576,15 @@ font-size: 14px;
     }
 
     .brand .brand-box h3 {
-        font-size: 25px;
+        font-size: 30px;
 
     }
 
     .brand .brand-box .button {
         margin-top: 15px;
-        padding: 5px 30px 5px 30px;
+        padding: 10px 50px 10px 50px;
         border-radius: 20px;
+        font-size: 15px;
     }
 
 
@@ -1848,7 +2597,7 @@ font-size: 14px;
     }
 
     .home-sec-1 .home-sec-1-container .home-sec-1-container-box .titles {
-       margin-top: 80px;
+       margin-top: 150px !important;
     }
 
     .home-sec-1 .home-sec-1-container .home-sec-1-container-box h1 {
@@ -1921,7 +2670,7 @@ font-size: 14px;
 
     .home-sec-2 .home-sec-2-container .home-sec-2-container-box-img img {
         border-radius: 18px;
-        margin-top: 0;
+        margin-top: 16%;
     }
 
     .home-sec-2 .home-sec-2-container .home-sec-2-container-box-text {
@@ -1930,6 +2679,7 @@ font-size: 14px;
 
     .home-sec-2 .home-sec-2-container .home-sec-2-container-box-text h2 {
         font-size: 30px;
+        margin-top: 0;
     }
 
     .home-sec-2 .home-sec-2-container .home-sec-2-container-box-text p {
@@ -1961,13 +2711,15 @@ font-size: 14px;
 
      /* -------------- section 4 --------------- */
 
-.home-sec-4 .home-sec-4-container .home-sec-4-container-box {
+/* .home-sec-4 .home-sec-4-container .home-sec-4-container-box {
    padding:  0 20px 0 20px;
 }
 
 .home-sec-4 .home-sec-4-container .home-sec-4-container-box h3 {
-   font-size: 20px;
-}
+    font-size: 23px;
+    margin-top: 30px;
+ }
+
 
 .home-sec-4 .home-sec-4-container .space{
     margin-top: 25px;
@@ -1979,28 +2731,61 @@ font-size: 14px;
     width: 60px;
 }
 
-/* .home-sec-4 .home-sec-4-container .space .last-img{
-    margin-left: 35px !important;
-} */
+
 
 .home-sec-4 .home-sec-4-container .space .home-sec-4-container-img img{
     height: auto;
     width: 100px    ;
     margin-top: 20px;
+} */
+
+
+.hcarousel h3{
+    font-size: 20px;
+    margin-top: 70px;
 }
+
+/* .hcarousel h3 span{
+    font-size: 15px;
+} */
+
+
+.hcarousel .logos .logos-slide img{
+    margin: 0 25px;
+    width: 80px;
+}
+
+
+
 
 
 
 /*---- section 5 -----*/
 
-.card {
-  background-color: #f9fafe;
-  width: 1000px;
-  height: 35%;
-  border-radius: 5px;
-  margin: 0;
+.home-sec-5{
+    width: 100%;
+    height: 50vh;
 }
 
+.card {
+  border-radius: 5px;
+  margin: 0;
+  width: 200% !important;
+}
+
+/* .card h1{
+    margin-top: 20px;
+} */
+
+.card h2{
+    font-size: 6px;
+}
+
+
+.card p{
+    margin-bottom: 10px;
+    font-size: 5px;
+}
 .quote-icon {
   width: 35px;
   margin-top: 10px;
@@ -2017,7 +2802,7 @@ font-size: 14px;
 }
 
 .header {
-  margin: 10px 0 0 0;
+  margin: 0 0 0 0 !important;
 }
 
 .name {
@@ -2113,8 +2898,8 @@ font-size: 14px;
     margin-top: -25%;
 }
 .about-sec-1 .about-sec-1-container .about-sec-1-container-header h1{
- margin-top: 85px;
- font-size: 25px;
+ margin-top: 120px;
+ font-size: 35px;
 
 }
 
@@ -2122,25 +2907,13 @@ font-size: 14px;
     padding: 0 20px 0 20px;
 }
 
-
-.about-sec-1 .about-sec-1-container .about-sec-1-container-img .img-bg{
-
-    height: 83%;
-    width: auto;
-    border-radius: 10px 10px 10px 10px;
-    margin-left: 0;
-    margin-top: 20px;
-}
-
-
 .about-sec-1 .about-sec-1-container .about-sec-1-container-img .img-bg img{
-    margin-left: 5%;
-    border-radius:0 0 0 0;
+    width: 100%;
 }
 
 
 .about-sec-1 .about-sec-1-container .about-sec-1-container-text{
-    padding: 20px 0 0 0;
+    padding: 0 0 0 0;
 }
 
 .about-sec-1 .about-sec-1-container .about-sec-1-container-text p{
@@ -2236,17 +3009,40 @@ font-size: 14px;
 
 .about-sec-3  .about-sec-3-container .about-sec-3-container-btn p a{
    margin-top: 30px;
+   padding: 10px 50px 10px 50px;
+   font-size: 14px;
 }
 
 
 /* -------------------------------------------------------------- contact page --------------------------------------------------- */
-
+.contact-sec-1{
+   margin-top: -25%;
+   height: 30vh;
+}
 .contact-sec-1 .contact-sec-1-container .contact-sec-1-container-box h1{
     font-size: 25px ;
+    margin-top: 150px;
 }
 
 .contact-sec-1 .contact-sec-1-container .contact-sec-1-container-box h4{
 font-size: 11px;
+
+}
+
+
+.contact-sec-2 form{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-bottom: 60px !important;
+}
+
+.contact-sec-2 form button{
+    padding: 10px 30px 10px 30px;
+    font-size: 16px;
+}
+
+.contact-sec-2 form select option{
+    font-size: 12px;
 }
 
 
@@ -2308,6 +3104,11 @@ font-size: 11px;
 
     }
 
+    
+    .brand .brand-box h4{
+        font-size: 20px;
+    }
+
     .brand .brand-box .button {
         margin-top: 15px;
         padding: 5px 30px 5px 30px;
@@ -2341,13 +3142,54 @@ font-size: 11px;
         font-size: 17px;
     }
 
-    .home-sec-1 .home-sec-1-container .home-sec-1-container-image{
-       margin-top: 30px;
-    }
-
-    .home-sec-1 .home-sec-1-container .home-sec-1-container-image p img{
-        width: 130px;
-    }
+    .home-sec-1 .home-sec-1-container .home-sec-1-container-image {
+        margin: 60px 0 0 -130px;
+        position: relative;
+     }
+     
+     .home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back {
+       width: 140px;
+       position: absolute;
+     }
+     
+     .home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back-1 {
+      margin: -10px 0 0 50px;
+      width: 170px;
+     }
+     
+     .home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back-2 {
+      margin: 165px 0 0 -50px;
+      width: 120px;
+     }
+     
+     .home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back-3 {
+      margin: 85px 0 0 45%;
+      width: 90px;
+      /* display: none; */
+     }
+     
+     .home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back-4 {
+      margin: 70% 0 0 -30px;
+      width: 120px;
+      /* display: none; */
+     }
+     
+     .home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back-5 {
+      margin: 50% 0 0 47%;
+      width: 110px;
+      /* display: none; */
+     }
+     
+     .home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back-6 {
+      margin: 67% 0 0 25%;
+      width: 150px;
+     }
+     
+     .home-sec-1 .home-sec-1-container .home-sec-1-container-image p .top-img {
+       position: absolute;
+       width: 250px;
+     }
+     
 
 
 
@@ -2395,7 +3237,7 @@ font-size: 11px;
 
     /* -------------- section 4 --------------- */
 
-.home-sec-4 .home-sec-4-container .home-sec-4-container-box {
+/* .home-sec-4 .home-sec-4-container .home-sec-4-container-box {
    padding:  0 30px 0 30px;
 }
 
@@ -2423,8 +3265,22 @@ font-size: 11px;
     height: auto;
     width: 100px    ;
     margin-top: 20px;
+} */
+
+.hcarousel h3{
+    font-size: 20px;
+    margin-top: 70px;
 }
 
+.hcarousel h3 span{
+    font-size: 15px;
+}
+
+
+.hcarousel .logos .logos-slide img{
+    margin: 0 25px;
+    width: 80px;
+}
 
 
 
@@ -2539,27 +3395,18 @@ font-size: 11px;
     margin-top: -15%;
 }
 .about-sec-1 .about-sec-1-container .about-sec-1-container-header h1{
- margin-top: 90px;
- font-size: 30px;
-
-}
-
-
-
-.about-sec-1 .about-sec-1-container .about-sec-1-container-img .img-bg{
-
-    height: 87%;
-    width: auto;
-    border-radius: 10px 10px 10px 10px;
-    margin-left: 0;
-    margin-top: 20px;
-}
-
-
-.about-sec-1 .about-sec-1-container .about-sec-1-container-img .img-bg img{
-    margin-left: 5%;
-    border-radius:0 0 0 0;
-}
+    margin-top: 120px;
+    font-size: 35px;
+   
+   }
+   
+   .about-sec-1 .about-sec-1-container-text p{
+       padding: 0 20px 0 20px;
+   }
+   
+   .about-sec-1 .about-sec-1-container .about-sec-1-container-img .img-bg img{
+       width: 100%;
+   }
 
 
 .about-sec-1 .about-sec-1-container .about-sec-1-container-text{
@@ -2567,7 +3414,7 @@ font-size: 11px;
 }
 
 .about-sec-1 .about-sec-1-container .about-sec-1-container-text p{
-    font-size: 13px;
+    font-size: 14px;
 }
 
 
@@ -2672,6 +3519,21 @@ font-size: 11px;
 
 .contact-sec-1 .contact-sec-1-container .contact-sec-1-container-box h4{
 font-size: 14px;
+}
+
+.contact-sec-2 form{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-bottom: 60px !important;
+}
+
+.contact-sec-2 form button{
+    padding: 10px 30px 10px 30px;
+    font-size: 16px;
+}
+
+.contact-sec-2 form select option{
+    font-size: 12px;
 }
 
 }
