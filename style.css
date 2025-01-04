@@ -2487,10 +2487,13 @@ margin-top: -20%;
 
 
 /* -------------------------------------------------------------- contact page --------------------------------------------------- */
-
+.contact-sec-1{
+    margin-top: -20%;
+    height: 35vh;
+}
 .contact-sec-1 .contact-sec-1-container .contact-sec-1-container-box h1{
     font-size: 35px ;
-    margin-top: 50px;
+    margin-top: 170px;
 }
 
 .contact-sec-1 .contact-sec-1-container .contact-sec-1-container-box h4{
@@ -2524,7 +2527,7 @@ font-size: 14px;
 
 
 /* For Mobile Portrait View */
-@media screen and (min-device-width: 320px) and (max-device-width: 500px) and (orientation: portrait) {
+@media screen and (min-device-width: 390px) and (max-device-width: 500px) and (orientation: portrait) {
 
     /* navbar */
     section{
@@ -2593,7 +2596,8 @@ font-size: 14px;
 
      .home-sec-1{
         background-image: url("image/grid\ mobile.png");
-        margin-top: -20%;
+        margin-top: -25%;
+        /* overflow: hidden !important; */
     }
 
     .home-sec-1 .home-sec-1-container .home-sec-1-container-box .titles {
@@ -2670,7 +2674,7 @@ font-size: 14px;
 
     .home-sec-2 .home-sec-2-container .home-sec-2-container-box-img img {
         border-radius: 18px;
-        margin-top: 16%;
+        margin-top: 20%;
     }
 
     .home-sec-2 .home-sec-2-container .home-sec-2-container-box-text {
@@ -2850,7 +2854,7 @@ font-size: 14px;
 }
 
 .footer-sec .footer-sec-container .footer-sec-container-box .mail h1{
-    font-size:25px;
+    font-size:23px;
     margin-top: 30px;
 }
 
@@ -3046,8 +3050,536 @@ font-size: 11px;
 }
 
 
+
+
+
 }
 
+/* for older and smaller screens  */
+@media screen and (min-device-width: 320px) and (max-device-width: 389px) and (orientation: portrait){
+    
+   /* navbar */
+   section{
+    /* padding: 40px 25px 0 25px !important; */
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    padding-bottom: 0 !important;
+    }
+  
+    nav{
+         padding: 20px 20px 0 0 !important;
+    }
+    
+    nav .offcanvas {
+        padding: 0 12px 0 12px;
+    }
+
+    nav .offcanvas offcanvas-body .navbar-nav {
+        display: flex !important;
+    }
+
+    nav .offcanvas h5 img {
+        width: 35px;
+    }
+
+    nav .offcanvas ul li a {
+        font-size: 13px;
+        margin-right: 11px;
+    }
+
+
+    .connect .connect-box h3 {
+        font-size: 12px !important;
+    }
+
+    
+    .brand .brand-box h4{
+        font-size: 18px;
+    }
+
+    .connect .connect-box a {
+        font-size: 8px !important;
+        margin-right: 11px;
+
+    }
+
+    .brand {
+        margin: 70px 0 0 8px;
+    }
+
+    .brand .brand-box h3 {
+        font-size: 30px;
+
+    }
+
+    .brand .brand-box .button {
+        margin-top: 15px;
+        padding: 10px 50px 10px 50px;
+        border-radius: 20px;
+        font-size: 15px;
+    }
+
+
+    /* ------------------------ home page   -------------------------- */
+
+
+     .home-sec-1{
+        background-image: url("image/grid\ mobile.png");
+         margin-top: -25%
+        /*  overflow: hidden !important; */
+    }
+
+    .home-sec-1 .home-sec-1-container .home-sec-1-container-box .titles {
+       margin-top: 150px !important;
+    }
+
+    .home-sec-1 .home-sec-1-container .home-sec-1-container-box h1 {
+        font-size: 35px;
+    }
+
+
+    .home-sec-1 .home-sec-1-container .home-sec-1-container-box p {
+        font-size: 14px;
+    }
+
+    .home-sec-1 .home-sec-1-container .home-sec-1-container-box a {
+        margin-top: 10px;
+        padding: 10px 30px 10px 30px;
+        font-size: 17px;
+    }
+
+     .home-sec-1 .home-sec-1-container .home-sec-1-container-image {
+   margin: 40px 0 0 -100px;
+   position: relative;
+}
+
+.home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back {
+  width: 140px;
+  position: absolute;
+}
+
+.home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back-1 {
+ margin: -5px 0 0 37px;
+ width: 140px;
+}
+
+.home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back-2 {
+ margin: 115px 0 0 -50px;
+ width: 120px;
+ /* display:none */
+}
+
+.home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back-3 {
+ margin: 70px 0 0 150px;
+ width: 70px;
+ 
+}
+
+.home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back-4 {
+ margin: 67% 0 0 -17px;
+ width: 95px;
+ /* display: none; */
+}
+
+.home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back-5 {
+ margin: 44% 0 0 40%;
+ width: 110px;
+ /* display: none; */
+}
+
+.home-sec-1 .home-sec-1-container .home-sec-1-container-image p .back-6 {
+ margin: 60% 0 0 23%;
+ width: 130px;
+}
+
+.home-sec-1 .home-sec-1-container .home-sec-1-container-image p .top-img {
+  position: absolute;
+  width: 200px;
+}
+
+
+
+    /* -------- section 2 -------  */
+
+    .home-sec-2 .home-sec-2-container .home-sec-2-container-box-img img {
+        border-radius: 18px;
+        margin-top: 75%;
+    }
+
+    .home-sec-2 .home-sec-2-container .home-sec-2-container-box-text {
+        margin-top: 45px;
+    }
+
+    .home-sec-2 .home-sec-2-container .home-sec-2-container-box-text h2 {
+        font-size: 30px;
+        margin-top: 0;
+    }
+
+    .home-sec-2 .home-sec-2-container .home-sec-2-container-box-text p {
+        font-size: 18px;
+        margin-top: 25px;
+    }
+
+
+    /* ---------- seection 3 ----------- */
+
+
+    .home-sec-3 h2 {
+        font-size: 25px;
+        margin-top: 120%;
+    }
+
+    .home-sec-3 .home-sec-3-container .home-sec-3-container-box img {
+        border-radius: 15px;
+    }
+
+    .home-sec-3 .home-sec-3-container .home-sec-3-container-box a h3 {
+        font-size: 16px;
+    }
+
+    .home-sec-3 .home-sec-3-container .home-sec-3-container-box p {
+        font-size: 13px;
+    }
+
+
+
+     /* -------------- section 4 --------------- */
+
+/* .home-sec-4 .home-sec-4-container .home-sec-4-container-box {
+   padding:  0 20px 0 20px;
+}
+
+.home-sec-4 .home-sec-4-container .home-sec-4-container-box h3 {
+    font-size: 23px;
+    margin-top: 30px;
+ }
+
+
+.home-sec-4 .home-sec-4-container .space{
+    margin-top: 25px;
+}
+
+.home-sec-4 .home-sec-4-container .space .home-sec-4-container-img{
+   padding: 0;
+    margin-left: 25px !important;
+    width: 60px;
+}
+
+
+
+.home-sec-4 .home-sec-4-container .space .home-sec-4-container-img img{
+    height: auto;
+    width: 100px    ;
+    margin-top: 20px;
+} */
+
+
+.hcarousel h3{
+    font-size: 20px;
+    margin-top: 70px;
+}
+
+/* .hcarousel h3 span{
+    font-size: 15px;
+} */
+
+
+.hcarousel .logos .logos-slide img{
+    margin: 0 25px;
+    width: 80px;
+}
+
+
+
+
+
+
+/*---- section 5 -----*/
+
+.home-sec-5{
+    width: 100%;
+    height: 90vh;
+}
+
+.card {
+  border-radius: 5px;
+  margin: 0;
+  width: 200% !important;
+}
+
+/* .card h1{
+    margin-top: 20px;
+} */
+
+.card h2{
+    font-size: 6px;
+}
+
+
+.card p{
+    margin-bottom: 10px;
+    font-size: 5px;
+}
+.quote-icon {
+  width: 35px;
+  margin-top: 10px;
+}
+
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 150px;
+  border: 2px solid #f9fafe;
+  left: 78%;
+  margin-top: 30%;
+}
+
+.header {
+  margin: 0 0 0 0 !important;
+}
+
+.name {
+  font-size: 10px;
+  margin: 0;
+}
+
+.title {
+  font-size: 7px;
+  margin: 5px 0 0 0;
+  padding: 3px;
+}
+
+.quote-container {
+  margin: 0;
+  height: fit-content;
+  padding: 5px 10px 0 10px;
+}
+
+.quote {
+  height: fit-content;
+  font-size: 5px;
+  text-align: center;
+  margin: 0;
+}
+
+
+.swiper-pagination{
+    margin-bottom: 10% !important;
+}
+
+
+
+
+
+/*---------------------- footer section ----------------------------  */
+
+.footer-sec{
+    padding: 40px 30px 10px 35px !important;
+    bottom: 0 !important;
+}
+.footer-sec .footer-sec-container .footer-sec-container-box h3{
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.footer-sec .footer-sec-container .footer-sec-container-box .mail h1{
+    font-size:23px;
+    margin-top: 30px;
+}
+
+
+.footer-sec .footer-sec-container .footer-sec-container-box .links{
+    margin-top: 30px;
+}
+
+.footer-sec .footer-sec-container .footer-sec-container-box .links a {
+  margin-right: 18px;
+  font-size: 10px;
+}
+
+.footer-sec .footer-sec-container .footer-sec-container-box .social-media{
+    margin-top: 30px;
+}
+
+.footer-sec .footer-sec-container .footer-sec-container-box .social-media a img{
+    width:  20px;
+    margin-right:20px;
+}
+
+.footer-sec .footer-sec-container .footer-sec-container-box .social-media h4{
+    font-size: 18px;
+}
+
+.footer-sec .footer-sec-container .footer-sec-container-box .copyright{
+    margin-top: 35px;
+}
+
+
+.footer-sec .footer-sec-container .footer-sec-container-box .copyright span{
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------- about page -------------------------------------------------------------------- */
+.about-sec-1{
+    background-image: url("image/grid\ mobile.png");
+    margin-top: -25%;
+}
+.about-sec-1 .about-sec-1-container .about-sec-1-container-header h1{
+ margin-top: 120px;
+ font-size: 35px;
+
+}
+
+.about-sec-1 .about-sec-1-container-text p{
+    padding: 0 20px 0 20px;
+}
+
+.about-sec-1 .about-sec-1-container .about-sec-1-container-img .img-bg img{
+    width: 100%;
+}
+
+
+.about-sec-1 .about-sec-1-container .about-sec-1-container-text{
+    padding: 0 0 0 0;
+}
+
+.about-sec-1 .about-sec-1-container .about-sec-1-container-text p{
+    font-size: 12px;
+}
+
+
+
+/*------------------------------- section 2 -------------------------- */
+
+/* box 1 */
+.about-sec-2 .about-sec-2-container .about-sec-2-container-box1{
+    padding: 5px 30px 5px 30px;
+    width: auto;
+    margin: 0;
+}
+
+.about-sec-2 .about-sec-2-container .about-sec-2-container-box1 h1{
+    font-size: 70px;
+}
+
+.about-sec-2 .about-sec-2-container .about-sec-2-container-box1 h4{
+    font-size: 13px;
+    margin: 25px 0 0 30px;
+
+}
+
+
+
+/* box2 */
+.about-sec-2 .about-sec-2-container .about-sec-2-container-box2{
+     padding: 5px 30px 5px 30px;
+    width: auto;
+    margin: 20px 0 0 0 ;
+}
+
+.about-sec-2 .about-sec-2-container .about-sec-2-container-box2 h1{
+   font-size: 70px;
+}
+
+.about-sec-2 .about-sec-2-container .about-sec-2-container-box2 h4{
+    font-size: 13px;
+    margin: 25px 0 0 30px;
+
+}
+
+
+
+/* box3 */
+.about-sec-2 .about-sec-2-container .about-sec-2-container-box3{
+     padding: 5px 30px 5px 30px;
+    width: auto;
+    margin: 20px 0 0 0 ;
+}
+
+.about-sec-2 .about-sec-2-container .about-sec-2-container-box3 h1{
+    font-size: 70px;
+}
+
+.about-sec-2 .about-sec-2-container .about-sec-2-container-box3 h4{
+   font-size: 10px;
+    margin: 25px 0 0 25px;
+}
+
+
+/* box4 */
+.about-sec-2 .about-sec-2-container .about-sec-2-container-box4{
+      padding: 5px 30px 5px 30px;
+    width: auto;
+    margin: 20px 0 0 0 ;
+}
+
+.about-sec-2 .about-sec-2-container .about-sec-2-container-box4 h1{
+    font-size: 70px;
+}
+
+.about-sec-2 .about-sec-2-container .about-sec-2-container-box4 h4{
+   font-size: 10px;
+    margin: 25px 0 0 25px;
+
+}
+
+
+
+
+/* ----------------  section 3 ----------------------x */
+
+.about-sec-3  .about-sec-3-container .about-sec-3-container-box h1{
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+
+.about-sec-3  .about-sec-3-container .about-sec-3-container-btn p a{
+   margin-top: 30px;
+   padding: 10px 50px 10px 50px;
+   font-size: 14px;
+}
+
+
+/* -------------------------------------------------------------- contact page --------------------------------------------------- */
+.contact-sec-1{
+   margin-top: -25%;
+   height: 30vh;
+}
+.contact-sec-1 .contact-sec-1-container .contact-sec-1-container-box h1{
+    font-size: 25px ;
+    margin-top: 150px;
+}
+
+.contact-sec-1 .contact-sec-1-container .contact-sec-1-container-box h4{
+font-size: 11px;
+
+}
+
+
+.contact-sec-2 form{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-bottom: 60px !important;
+}
+
+.contact-sec-2 form button{
+    padding: 10px 30px 10px 30px;
+    font-size: 16px;
+}
+
+.contact-sec-2 form select option{
+    font-size: 12px;
+}
+
+}
 
 
 
