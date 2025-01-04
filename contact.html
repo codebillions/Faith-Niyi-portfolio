@@ -18,16 +18,18 @@
         <link rel="stylesheet" href="css/aos.css">
 
 
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-        <script type="text/javascript">
-            ( function ()
-            {
-                emailjs.init( {
-                    publicKey: "HQnZtZ4Sd1KhfF68t",
-                } );
-            } )();
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
         </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "HQnZtZ4Sd1KhfF68t",
+            });
+        })();
+        </script>
+
+        <script src="sendemal.js"></script>
 
 
     </head>
@@ -181,9 +183,10 @@
         <section class="contact-sec-2 container-fluid px-4">
 
 
-            <form action="" method="" class="row g-3 form mt-5 pb-4 needs-validation" novalidate enctype="multipart/formm-data"
+            <form action="https://api.web3forms.com/submit" method="POST" class="row g-3 form mt-5 pb-4 needs-validation" novalidate enctype="multipart/formm-data"
                 data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
 
+                <input type="hidden" name="access_key" value="0bb25e7f-f16a-4181-9275-51f362d59c57">
 
                 <div id="column2" class="col-md-12">
                     <label for="" class="form-label">Full Name</label>
@@ -253,7 +256,7 @@
 
 
                 <div class="col-12">
-                    <button onclick="sendEmail()" name="submit" type="submit"
+                    <button type="submit"
                         class="button btn btn-sm text-center px-5 ">Submit</button>
                 </div>
 

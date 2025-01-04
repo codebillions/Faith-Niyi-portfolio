@@ -1,6 +1,6 @@
 AOS.init();
 
-
+// swiper
 const swiper = new Swiper(".swiperCarousel", {
     slidesPerView: 3,
     centeredSlides: true,
@@ -68,21 +68,7 @@ const swiper = new Swiper(".swiperCarousel", {
         } )
 } )();
 
-
-// email sender 
-function sendEmail() {
-  let parms = {
-    name : document.getElementById( "name" ).value,
-    email : document.getElementById( "email" ).value,
-    business : document.getElementById( "business" ).value,
-    select : document.getElementById( "select" ).value,
-    budget : document.getElementById( "budget" ).value,
-    add : document.getElementById( "add" ).value,
-  }
-
-  emailjs.send("service_w98g14m","template_v3bx2en",parms).then(alert("Email Sent !!"))
-}
-
+// animation 
 let resizeTimer;
 window.addEventListener("resize", () => {
   document.body.classList.add("resize-animation-stopper");
