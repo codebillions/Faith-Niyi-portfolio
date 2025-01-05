@@ -350,6 +350,7 @@ nav .offcanvas ul li a:hover {
   position: absolute;
   width: 400px;
   /* animation: floatAnimation 4s infinite alternate; */
+  /* cursor: cell; */
 }
 
 @keyframes floatAnimation {
@@ -405,33 +406,104 @@ nav .offcanvas ul li a:hover {
 }
 
 
-.home-sec-3 .home-sec-3-container .home-sec-3-container-box img {
-    border: none;
-    border-radius: 30px;
-    margin-top: 30px;
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box {
+    border: none !important;
+    overflow: hidden;
+    /* height: 50%; */
+    /* background: red; */
+    width: 47%;
+    padding: 0 !important;
+    margin-top: 20px;
+    border-radius: 10px;
+    position: relative;
 }
 
-.home-sec-3 .home-sec-3-container .home-sec-3-container-box a {
+
+
+.home-sec-3 .home-sec-3-container .box-shift{
+    margin-left:50px;
+}
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box img {
+    object-fit: cover !important;
+    transition: transform 0.5s;
+    overflow: hidden;
+    border: none;
+}
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box:hover img{
+    transform: scale(1.1);
+}
+
+
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box .text-cont{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: none;
+    border: none !important;
+    
+}
+
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box:hover .text-cont{
+   display: block;
+   
+   /* transform: transition(5s); */
+}
+
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box .work-1{
+    background-color: hsla(231, 93%, 12%, 0.5);
+}
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box .work-2{
+    background-color: hsla(0, 0%, 0%, 0.5);
+}
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box .work-3{
+
+    background-color: hsla(24, 100%, 58%, 0.5);
+
+}
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box .work-4{
+    background-color: hsla(34, 100%, 84%, 0.5);
+
+}
+
+
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box .text-cont a {
     text-decoration: none;
 }
 
-.home-sec-3 .home-sec-3-container .home-sec-3-container-box a h3 {
-    margin-top: 20px;
-    margin-left: 10px;
-    color: black !important;
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box .text-cont a h3 {
+    color: white !important;
+    font-size: 30px;
+    margin-left: 35px;
+    margin-top: 55%;
+     opacity: 100% !important;
 }
 
-.home-sec-3 .home-sec-3-container .home-sec-3-container-box p {
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box .text-cont p {
     margin-left: 10px;
+    font-size: 20px;
+    color: white !important;
+    margin-left: 35px;
 }
 
 .home-sec-3 .home-sec-3-container .home-sec-3-container-box-btn a {
     background: #f27d0c;
     color: white;
-    padding: 10px 40px 10px 40px;
+    padding: 20px 60px 20px 60px;
     border: none;
-    border-radius: 23px;
-    margin-top: 20px;
+    border-radius: 35px;
+    margin-top: 60px;
+    font-size: 18px;
 }
 
 
@@ -1238,24 +1310,66 @@ footer{
 
 
 
+
+
+
     /* ---------- seection 3 ----------- */
 
-    .home-sec-3 h2 {
-        font-size: 35px;
-        margin-top: 40px;
-    }
 
-    .home-sec-3 .home-sec-3-container .home-sec-3-container-box img {
-        border-radius: 15px;
-    }
+.home-sec-3 h2 {
+    margin-left: 10px;
+    font-size: 30px;
+    margin-top: 50px;
+}
 
-    .home-sec-3 .home-sec-3-container .home-sec-3-container-box a h3 {
-        font-size: 20px;
-    }
 
-    .home-sec-3 .home-sec-3-container .home-sec-3-container-box p {
-        font-size: 14px;
-    }
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box {
+    width: 47%;
+    margin-top: 30px;
+    margin-left: 15x;
+}
+
+
+
+.home-sec-3 .home-sec-3-container .box-shift{
+    margin-left: 35px;
+}
+
+
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box:hover .text-cont{
+   display: block;
+   
+   /* transform: transition(5s); */
+}
+
+
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box .text-cont a {
+    text-decoration: none;
+}
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box .text-cont a h3 {
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 40%;
+}
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box .text-cont p {
+    font-size: 14px;
+    margin-left: 50px;
+}
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box-btn a {
+
+    padding: 15px 50px 15px 50px;
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+
+
 
 
     /* -------------- section 4 --------------- */
@@ -1693,23 +1807,59 @@ font-size: 18px;
     
     
         /* ---------- seection 3 ----------- */
-    
-        .home-sec-3 h2 {
-            font-size: 35px;
-            margin-top: 40px;
-        }
-    
-        .home-sec-3 .home-sec-3-container .home-sec-3-container-box img {
-            border-radius: 15px;
-        }
-    
-        .home-sec-3 .home-sec-3-container .home-sec-3-container-box a h3 {
-            font-size: 20px;
-        }
-    
-        .home-sec-3 .home-sec-3-container .home-sec-3-container-box p {
-            font-size: 18px;
-        }
+
+
+.home-sec-3 h2 {
+    margin-left: 10px;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box {
+    width: 47%;
+    margin-top: 30px;
+    margin-left: 15x;
+}
+
+
+
+.home-sec-3 .home-sec-3-container .box-shift{
+    margin-left: 50px;
+}
+
+
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box:hover .text-cont{
+   display: block;
+   
+   /* transform: transition(5s); */
+}
+
+
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box .text-cont a {
+    text-decoration: none;
+}
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box .text-cont a h3 {
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 40%;
+}
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box .text-cont p {
+    font-size: 14px;
+    margin-left: 50px;
+}
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box-btn a {
+
+    padding: 15px 50px 15px 50px;
+    margin-top: 40px;
+    font-size: 15px;
+}
     
     
         /* -------------- section 4 --------------- */
@@ -2165,52 +2315,70 @@ font-size: 18px;
 
 
 
-    /* ---------- seection 3 ----------- */
 
 
-    .home-sec-3 h2 {
-        font-size: 35px;
-    }
 
-    .home-sec-3 .home-sec-3-container .home-sec-3-container-box img {
-        border-radius: 20px;
-    }
+   /* ---------- seection 3 ----------- */
 
-    .home-sec-3 .home-sec-3-container .home-sec-3-container-box a h3 {
-        font-size: 20px;
-    }
 
-    .home-sec-3 .home-sec-3-container .home-sec-3-container-box p {
-        font-size: 14px;
-    }
+.home-sec-3 h2 {
+    margin-left: 10px;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box {
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+
+.home-sec-3 .home-sec-3-container .box-shift{
+    margin-left:0;
+}
+
+
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box:hover .text-cont{
+   display: block;
+   
+   /* transform: transition(5s); */
+}
+
+
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box .text-cont a {
+    text-decoration: none;
+}
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box .text-cont a h3 {
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 40%;
+}
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box .text-cont p {
+    font-size: 14px;
+    margin-left: 50px;
+}
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box-btn a {
+
+    padding: 15px 50px 15px 50px;
+    margin-top: 80px;
+    font-size: 15px;
+}
+
+
+
+
+
 
 
     /* -------------- section 4 --------------- */
-
-/* .home-sec-4 .home-sec-4-container .home-sec-4-container-box {
-   padding:  0 20px 0 20px;
-}
-
-.home-sec-4 .home-sec-4-container .home-sec-4-container-box h3 {
-   font-size: 25px;
-   margin-top: 30px;
-}
-
-.home-sec-4 .home-sec-4-container .space .home-sec-4-container-img{
-    padding: 0;
-    margin-left: 25px !important;
-    width: 70px;
-    
-}
-
-
-.home-sec-4 .home-sec-4-container .space .home-sec-4-container-img img{
-   
-    height: auto;
-    width: 100px; 
-    margin-top: 20px;
-    
-} */
 
 
 .hcarousel h3{
@@ -2692,24 +2860,64 @@ font-size: 14px;
     }
 
 
-    /* ---------- seection 3 ----------- */
 
 
-    .home-sec-3 h2 {
-        font-size: 25px;
-    }
 
-    .home-sec-3 .home-sec-3-container .home-sec-3-container-box img {
-        border-radius: 15px;
-    }
+   /* ---------- seection 3 ----------- */
 
-    .home-sec-3 .home-sec-3-container .home-sec-3-container-box a h3 {
-        font-size: 16px;
-    }
 
-    .home-sec-3 .home-sec-3-container .home-sec-3-container-box p {
-        font-size: 13px;
-    }
+.home-sec-3 h2 {
+    margin-left: 10px;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box {
+    width: 95%;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+
+
+.home-sec-3 .home-sec-3-container .box-shift{
+    margin-left: 10px;
+}
+
+
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box:hover .text-cont{
+   display: block;
+   
+   /* transform: transition(5s); */
+}
+
+
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box .text-cont a {
+    text-decoration: none;
+}
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box .text-cont a h3 {
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 40%;
+}
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box .text-cont p {
+    font-size: 14px;
+    margin-left: 50px;
+}
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box-btn a {
+
+    padding: 15px 50px 15px 50px;
+    margin-top: 60px;
+    font-size: 15px;
+}
+
 
 
 
@@ -3195,6 +3403,7 @@ font-size: 11px;
 .home-sec-1 .home-sec-1-container .home-sec-1-container-image p .top-img {
   position: absolute;
   width: 200px;
+  /* cursor: crosshair; */
 }
 
 
@@ -3221,25 +3430,71 @@ font-size: 11px;
     }
 
 
-    /* ---------- seection 3 ----------- */
+    
+    
 
 
-    .home-sec-3 h2 {
-        font-size: 25px;
-        margin-top: 120%;
-    }
+     /* ---------- seection 3 ----------- */
 
-    .home-sec-3 .home-sec-3-container .home-sec-3-container-box img {
-        border-radius: 15px;
-    }
 
-    .home-sec-3 .home-sec-3-container .home-sec-3-container-box a h3 {
-        font-size: 16px;
-    }
+.home-sec-3 h2 {
+    margin-left: 10px;
+    font-size: 30px;
+    margin-top: 105%;
+}
 
-    .home-sec-3 .home-sec-3-container .home-sec-3-container-box p {
-        font-size: 13px;
-    }
+
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box {
+    width: 95%;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+
+
+.home-sec-3 .home-sec-3-container .box-shift{
+    margin-left: 10px;
+}
+
+
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box:hover .text-cont{
+   display: block;
+   
+   /* transform: transition(5s); */
+}
+
+
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box .text-cont a {
+    text-decoration: none;
+}
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box .text-cont a h3 {
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 40%;
+}
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box .text-cont p {
+    font-size: 14px;
+    margin-left: 50px;
+}
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box-btn a {
+
+    padding: 15px 50px 15px 50px;
+    margin-top: 60px;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -3748,23 +4003,60 @@ font-size: 11px;
 
     /* ---------- seection 3 ----------- */
 
+ /* ---------- seection 3 ----------- */
 
-    .home-sec-3 h2 {
-        font-size: 25px;
-    }
 
-    .home-sec-3 .home-sec-3-container .home-sec-3-container-box img {
-        border-radius: 15px;
-    }
+ .home-sec-3 h2 {
+    margin-left: 10px;
+    font-size: 30px;
+    margin-top: 50px;
+}
 
-    .home-sec-3 .home-sec-3-container .home-sec-3-container-box a h3 {
-        font-size: 16px;
-    }
 
-    .home-sec-3 .home-sec-3-container .home-sec-3-container-box p {
-        font-size: 13px;
-    }
 
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box {
+    width: 95%;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+
+
+.home-sec-3 .home-sec-3-container .box-shift{
+    margin-left: 10px;
+}
+
+
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box:hover .text-cont{
+   display: block;
+   
+   /* transform: transition(5s); */
+}
+
+
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box .text-cont a {
+    text-decoration: none;
+}
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box .text-cont a h3 {
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 40%;
+}
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box .text-cont p {
+    font-size: 14px;
+    margin-left: 50px;
+}
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box-btn a {
+
+    padding: 15px 50px 15px 50px;
+    margin-top: 60px;
+    font-size: 15px;
+}
 
 
     /* -------------- section 4 --------------- */

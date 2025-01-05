@@ -13,3 +13,23 @@ footer{
     background: rgb(4, 0, 20);
     padding: 40px 100px 40px 100px !important;
 }
+
+
+
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box {
+    border: none !important;
+    overflow: hidden;
+    height: 100%;
+}
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box img {
+    object-fit: cover;
+    transition: transform 0.5s;
+    height: 50%;
+    overflow: hidden;
+}
+
+.home-sec-3 .home-sec-3-container .home-sec-3-container-box:hover img{
+    transform: scale(1.2);
+}
